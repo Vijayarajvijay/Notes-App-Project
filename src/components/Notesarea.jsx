@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom'
 import noteimg from '../assets/notes icon black.svg'
 import editimg from '../assets/edit.svg'
 import deleteimg from '../assets/delete.svg'
+
 function Notesarea() {
   let {data,setData}=useContext(NotesDataContext)
   let navigate=useNavigate()
@@ -23,12 +24,7 @@ function Notesarea() {
       des
     })
     setData(newArray)
-  
-
-
-
-
-  }
+}
 
   
   return (<>

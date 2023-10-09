@@ -4,7 +4,7 @@ import Notesarea from './components/Notesarea'
 import { BrowserRouter,Routes,Route, Navigate, } from 'react-router-dom'
 import NotesContext from './components/context/NotesContext'
 import Home from './components/Home'
-import Edit from './assets/Edit'
+import Edit from './components/Edit'
 function App() {
   return (
    <>

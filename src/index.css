@@ -196,3 +196,8 @@
   font-family:'Montserrat', sans-serif;
   font-weight: 600;
 }
+@media (max-width:576px){
+  #homein{
+ width: 1000px !important ;
+  }
+}

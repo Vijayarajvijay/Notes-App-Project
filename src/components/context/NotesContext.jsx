@@ -9,11 +9,8 @@ function NotesContext({children}){
         {
             title:'Weekly Task',
             des : 'Lorem ipsum dolor sit amet consectetur. Sollicitudin enim risus ut vestibulum morbi tellus sit ac. Fames auctor quisque et aliquam maecenas sed at vitae facilisis. '
-        },
-        {
-            title:'Lyrics',
-            des : 'Lorem ipsum dolor sit amet consectetur. Sollicitudin enim risus ut vestibulum morbi tellus sit ac. Fames auctor quisque et aliquam maecenas sed at vitae facilisis. '
-        },
+        }
+        
       
        
     ])

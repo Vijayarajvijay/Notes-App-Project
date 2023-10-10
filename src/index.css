@@ -54,7 +54,7 @@
 }
 #hero {
     width: 100%;
-    height: 650px;
+    height: 725px;
     background: url("./assets/hero-bg.jpg") top left;
     background-size:cover;
     position: relative;
@@ -170,8 +170,10 @@
   
   @media (max-height: 500px) {
     #hero {
+      
       height: 120vh;
     }
+    
   }
 
   .title{
@@ -197,12 +199,18 @@
   font-weight: 600;
 }
 @media (max-width:576px){
+  body{
+    width:576px;
+    
+  }
   #homein{
- width: 1000px !important ;
+ width:1000px !important ;
   }
 #hero{
-  width: 100%;
-  height: 100%;
+  background-image: url("./assets/hero-bg.jpg");
+  background-size: cover;
+  height:100% ;
+  width:auto;
 }
 
 }

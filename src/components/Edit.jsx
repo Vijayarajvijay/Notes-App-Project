@@ -1,7 +1,6 @@
-import React, { useState,useContext,useEffect } from 'react'
-import {useNavigate} from 'react-router-dom'
+import React,{ useState,useContext,useEffect } from 'react'
+import {useNavigate,useParams} from 'react-router-dom'
 import { NotesDataContext } from './context/NotesContext'
-import {useParams} from 'react-router-dom'
 function Edit() {
  
     const params = useParams()

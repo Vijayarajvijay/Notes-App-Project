@@ -58,12 +58,14 @@ function Notesarea() {
       <div className='card-main d-flex'>
       <h4 style={{fontSize:'24px',color:'#203562',padding:'20px 0px 0px 15px'}}>{e.title}</h4>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <div className='mt-4'>
-     
-     <a href="">
+     <div className='d-flex'>
+     <div className='btn' >
       <img src={editimg} alt="" onClick={()=>{navigate(`/edit/${i}`)}} /> 
-     </a> &nbsp;
-      <a href=""><img src={deleteimg} alt="delete"  onClick={()=>handleDelete(i)}/>
-      </a>
+     </div> &nbsp;
+      <div className='btn'>
+        <img src={deleteimg} alt="delete"  onClick={()=>handleDelete(i)}/>
+      </div>
+      </div>
       </div> 
 
       </div>

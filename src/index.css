@@ -202,15 +202,20 @@
   body{
     width:576px;
     
+    
+    
   }
   #homein{
  width:1000px !important ;
+
+ 
   }
 #hero{
   background-image: url("./assets/hero-bg.jpg");
-  background-size: cover;
-  height:100% ;
-  width:auto;
+  background-size:cover;
+  height:auto; 
+  width: 1000px;
+  
 }
 
 }

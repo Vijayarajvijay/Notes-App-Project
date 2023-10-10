@@ -44,7 +44,7 @@ function Edit() {
        <div className='input'>
         <h3 className='top1'> Add a Note</h3>
        <input className='title' type="text" placeholder='Title' value={title} onChange={(e)=>{setTitle(e.target.value)}} />
-        <textarea class="form" id="exampleFormControlTextarea1" value={des} placeholder='Take a note...' rows="3" onChange={(e)=>setDes(e.target.value)} ></textarea>
+        <textarea className="form" id="exampleFormControlTextarea1" value={des} placeholder='Take a note...' rows="3" onChange={(e)=>setDes(e.target.value)} ></textarea>
 
        </div>
        <span className='btn btn-primary mt-2 ' onClick={()=>handleEdit()}> Add Notes</span>

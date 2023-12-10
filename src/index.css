@@ -190,7 +190,8 @@
 .row-main{
   overflow-x:scroll;
   width: 1000px;
-  overflow-y: hidden;
+
+ 
 }
 .top1{
   font-size: 32px;

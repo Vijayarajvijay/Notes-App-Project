@@ -17,14 +17,22 @@ function Notesarea() {
 
   let [title,setTitle]=useState("")
   let [des,setDes] = useState("")
-  let handleSave = ()=>{
-    let newArray = [...data]
+  let handleSave = () => {
+    if (!title.trim() || !des.trim()) {
+     
+      return; 
+    }
+  
+    let newArray = [...data];
     newArray.push({
       title,
-      des
-    })
-    setData(newArray)
-}
+      des,
+    });
+  
+    setData(newArray);
+    setTitle('');
+    setDes(''); 
+  };
 
   
   return (<>
@@ -34,8 +42,8 @@ function Notesarea() {
       <div className='addnote bg-white '>
        <div className='input'>
         <h3 className='top1'> Add a Note</h3>
-       <input className='title' type="text" placeholder='Title' onChange={(e)=>{setTitle(e.target.value)}} />
-        <textarea className="form" id="exampleFormControlTextarea1" placeholder='Take a note...' rows="3" onChange={(e)=>setDes(e.target.value)} ></textarea>
+       <input className='title' type="text" placeholder='Title' value={title} onChange={(e)=>{setTitle(e.target.value)}} />
+        <textarea className="form" id="exampleFormControlTextarea1" placeholder='Take a note...' rows="3" value={des} onChange={(e)=>setDes(e.target.value)} ></textarea>
 
        </div>
        <span className='btn btn-primary mt-2 ' onClick={()=>handleSave()}> Add Notes</span>
